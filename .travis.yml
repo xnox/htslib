@@ -6,6 +6,24 @@ matrix:
   include:
   - compiler: gcc
     os: linux
+    dist: bionic
+    arch: amd64
+    env: DO_MAINTAINER_CHECKS=yes USE_CONFIG=no
+
+  - compiler: gcc
+    os: linux
+    dist: bionic
+    arch: arm64
+    env: DO_MAINTAINER_CHECKS=yes USE_CONFIG=no
+
+  - compiler: gcc
+    os: linux
+    dist: bionic
+    arch: s390x
+    env: DO_MAINTAINER_CHECKS=yes USE_CONFIG=no
+
+  - compiler: gcc
+    os: linux
     env: DO_MAINTAINER_CHECKS=yes USE_CONFIG=no
 
   - compiler: gcc-8
